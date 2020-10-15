@@ -27,10 +27,6 @@ code {
   grid-gap: 1em;
 }
 
-.icon{
-  width: 150px;
-}
-
 .header {
   grid-area: h;
   background-color: rgb(111, 238, 255);
@@ -44,10 +40,24 @@ code {
 .content {
   grid-area: c;
   background-color: lawngreen;
+  display: grid;
+  padding-top: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 1em;
+}
+
+.content > div {
+  flex: 1 1 200px;
+}
+
+.content img{
+  max-width: 150px;
 }
 
 .footer{
   grid-area: f;
   background-color: blueviolet;
 }
-
